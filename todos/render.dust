@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+{@if cond="'{device}'=='Desktop'"}
+  <body style="font-size: medium">
+{:else}
+  <body style="font-size: x-large">
+{/if}
+
+  <h1 id="page-title">{title}</h1>
+
+  {#todos}
+    <div class="item">
+      <a class="update-link" href="./{id}" title="Get this todo item">{text}</a>
+    </div>
+  {/todos}
+
+  <div>Device string (debug): {device}</div>
+
+  </body>
+</html>

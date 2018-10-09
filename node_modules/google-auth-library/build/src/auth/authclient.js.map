@@ -1,0 +1,1 @@
+{"version":3,"file":"authclient.js","sourceRoot":"","sources":["../../../src/auth/authclient.ts"],"names":[],"mappings":";AAAA;;;;;;;;;;;;;;GAcG;;AAGH,mCAAoC;AAEpC,kDAAmD;AAQnD,MAAsB,UAAW,SAAQ,qBAAY;IAArD;;QACE,gBAAW,GAAG,IAAI,iCAAkB,EAAE,CAAC;QACvC,gBAAW,GAAgB,EAAE,CAAC;IAahC,CAAC;IANC;;OAEG;IACH,cAAc,CAAC,WAAwB;QACrC,IAAI,CAAC,WAAW,GAAG,WAAW,CAAC;IACjC,CAAC;CACF;AAfD,gCAeC"}

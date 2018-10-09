@@ -1,0 +1,19 @@
+{
+  "name": "aws-rest-with-dynamodb",
+  "version": "1.0.0",
+  "description": "Serverless CRUD service exposing a REST HTTP interface",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/datastore": "^2.0.0",
+    "dustjs-helpers": "1.5.0",
+    "dustjs-linkedin": "2.5.0",
+    "ejs-locals": "1.0.2",
+    "humanize-ms": "1.0.1",
+    "ms": "^0.7.1",
+    "path-to-regexp": "^2.4.0",
+    "qs": "6.3.1",
+    "serverless-google-cloudfunctions": "^2.0.0",
+    "uuid": "^2.0.3"
+  }
+}

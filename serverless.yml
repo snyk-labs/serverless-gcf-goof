@@ -1,0 +1,65 @@
+service: serverless-goof
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: google
+  project: snyk-presentations
+  region: us-central1
+  runtime: nodejs6
+  credentials: ~/.gcloud/keyfile.json
+  environment:
+    MY_SECRET_ENV_VAR: "Tada!"
+
+plugins:
+  - serverless-google-cloudfunctions
+
+functions:
+  create:
+    handler: todos-create
+    events:
+      - http: todos-create
+
+  list:
+    handler: todos-list
+    events:
+      - http: todos-list
+
+  get:
+    handler: todos-get
+    events:
+      - http: todos-get
+
+  update:
+    handler: todos-update
+    events:
+      - http: todos-update
+
+  delete:
+    handler: todos-delete
+    events:
+      - http: todos-delete
+
+  render:
+    handler: todos-render
+    events:
+      - http: todos-render
+
+  internalBackup:
+    handler: internal-backup
+    events:
+      - event:
+          eventType: providers/cloud.pubsub/eventTypes/topic.publish
+          resource: projects/snyk-presentations/topics/internal-backup
+
+  internalRestore:
+    handler: internal-restore
+    events:
+      - event:
+          eventType: providers/cloud.pubsub/eventTypes/topic.publish
+          resource: projects/snyk-presentations/topics/internal-backup
+
+  adminApi:
+    handler: admin
+    events:
+      - http: admin
