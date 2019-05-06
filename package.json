@@ -14,6 +14,12 @@
     "path-to-regexp": "^2.4.0",
     "qs": "6.3.1",
     "serverless-google-cloudfunctions": "^2.0.0",
-    "uuid": "^2.0.3"
-  }
+    "uuid": "^2.0.3",
+    "snyk": "^1.161.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
