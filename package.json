@@ -12,7 +12,7 @@
     "humanize-ms": "1.0.1",
     "ms": "^0.7.1",
     "path-to-regexp": "^2.4.0",
-    "qs": "6.3.1",
+    "qs": "6.9.4",
     "serverless-google-cloudfunctions": "^2.0.0",
     "uuid": "^2.0.3"
   }
