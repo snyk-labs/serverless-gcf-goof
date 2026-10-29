@@ -5,7 +5,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/datastore": "^2.0.0",
+    "@google-cloud/datastore": "^3.0.0",
     "dustjs-helpers": "1.5.0",
     "dustjs-linkedin": "2.5.0",
     "ejs-locals": "1.0.2",
